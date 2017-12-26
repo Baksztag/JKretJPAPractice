@@ -207,25 +207,6 @@ public class Main {
                 }
             }
         });
-
-//        get("/transactions", (req, res) -> {
-//            Session session = sessionFactory.openSession();
-//            Gson gson = new Gson();
-//            try {
-//                List<Transaction_> transactions = session.createQuery("FROM Transaction_").getResultList();
-//                System.out.println(transactions);
-//
-//
-//                return gson.toJson(transactions);
-//            } catch (Exception e) {
-//                return "Error: " + e.getMessage();
-//            }
-//            finally {
-//                if (session.isOpen()) {
-//                    session.close();
-//                }
-//            }
-//        });
     }
 
     private static void enableCORS() {
